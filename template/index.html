@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel = "stylesheet" href="style.css"/>
+        <title>Longshot</title>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bungee&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+
+        <div class = "grid-container">
+
+            <header class="header">
+            <div class="brand">
+                <button onclick="openMenu()">
+                    &#9776;
+                </button>
+                <a href="index.html">LONGSHOT</a>
+
+            </div>
+
+            <div class="header-links">
+                <a href="cart.html">Cart</a>
+                <a href="signin.html">Sign In </a>
+            </div>
+        </header>
+        <aside class ="sidebar">
+            <h3>Categories</h3>
+            <button class="sidebar-close-button" onclick="closeMenu()">X</button>
+            <ul>
+                <li>
+                    <a href="index.html">Men's Sneakers</a>
+                </li>
+
+                <li>
+                    <a href="index.html">Womens's Sneakers</a>
+                </li>
+
+            </ul>
+        </aside>
+
+
+            <main class="main">
+               <div class="content">
+                <ul class ="products">
+                    <li>
+                        <div class="product">
+                            <img src="./images/sneaker1.png" alt ="product" class = "product-image"/>
+                            <div class="product-name">
+                                <a href="product.html>">Flourescent sneakers</a>
+                            </div>
+                            <div class="product-brand">Off-White</div>
+                            <div class="price">$350</div>
+                            <div class="product-rating">4.5 stars(10 Reviews)</div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="product">
+                            <img src="./images/sneaker2.png" alt ="product" class = "product-image"/>
+                            <div class="product-name">
+                                <a href="product.html>">Track.2 Sneakers</a>
+                            </div>
+                            <div class="product-brand">Balenciaga</div>
+                            <div class="price">$900</div>
+                            <div class="product-rating">5 stars(1 Reviews)</div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="product">
+                            <img src="./images/sneaker3.png" alt ="product" class = "product-image"/>
+                            <div class="product-name">
+                                <a href="product.html>">Black Sneakers</a>
+                            </div>
+                            <div class="product-brand">Moschino</div>
+                            <div class="price">$550</div>
+                            <div class="product-rating">4 stars(2 Reviews)</div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="product">
+                            <img src="./images/sneaker4.png" alt ="product" class = "product-image"/>
+                            <div class="product-name">
+                                <a href="product.html>">Low Vulcanized Leather Sneakers</a>
+                            </div>
+                            <div class="product-brand">Off-White</div>
+                            <div class="price">$385</div>
+                            <div class="product-rating">4.8 stars(8 Reviews)</div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="product">
+                            <img src="./images/sneaker5.png" alt ="product" class = "product-image"/>
+                            <div class="product-name">
+                                <a href="product.html>">Double Arrow Sneakers</a>
+                            </div>
+                            <div class="product-brand">Off-White</div>
+                            <div class="price">$600</div>
+                            <div class="product-rating">4.7 stars(7 Reviews)</div>
+                        </div>
+                    </li>
+
+                </ul>
+               </div>
+            </main>
+            
+            <footer class="footer">
+                <p>    
+                Aashwin Ranjan
+                <br/>
+                All Rights Reserved
+                </p>
+            </footer>
+        </div>
+
+        <script>
+            function openMenu(){
+                document.querySelector(".sidebar").classList.add("open"); 
+            }
+            function closeMenu(){
+                document.querySelector(".sidebar").remove("open");
+            }
+        </script>
+
+    </body>
+</html>
